@@ -1,0 +1,8 @@
+h1 Todos
+form(action='/todos')
+  input(type='text' name='q' value = q)
+  input(type='submit' value='search')
+ul
+  each todo in todos
+    li= todo.id + ': ' + todo.name
+a(href='/todos') click vào đây
